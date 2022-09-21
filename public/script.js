@@ -130,6 +130,7 @@ window.addEventListener('load', function () {
         if (!canvasInitialized) {
             try {
                 await initAllCanvas();
+                $('body').find("#patientez").css("display", "none");
                 canvasInitialized = true;
             } catch (e) {
                 throw e;
